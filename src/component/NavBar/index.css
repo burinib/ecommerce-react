@@ -1,0 +1,27 @@
+.header__main {
+    background-color: rgb(16, 15, 15);
+}
+
+.header__title {
+    min-width: max-content;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__options {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__options li {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
