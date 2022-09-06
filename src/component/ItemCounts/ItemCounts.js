@@ -2,10 +2,10 @@ import "./itemCounts.css";
 
 import React, { useState } from "react";
 
-export const ItemCounts = () => {
+export const ItemCounts = ({ stock = 5 }) => {
   const [counter, setCounter] = useState(1);
   const increment = () => {
-    if (counter < 5) {
+    if (counter < stock) {
       setCounter(counter + 1);
     }
   };

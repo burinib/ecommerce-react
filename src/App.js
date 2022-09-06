@@ -10,9 +10,9 @@ function App() {
   return (
     <div>
       <NavBar />
-     {/*  <ItemListContainer> */}
-     {/*    <ItemList /> */}
-     {/*  </ItemListContainer> */}
+     <ItemListContainer>
+     <ItemList />
+     </ItemListContainer>
       <ItemDetailContainer />
     </div>
   );

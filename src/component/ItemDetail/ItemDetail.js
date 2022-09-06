@@ -1,8 +1,7 @@
 import React from "react";
-import { data } from "../../utils/data";
+import ItemCounts from "../ItemCounts/ItemCounts";
 
 import "./itemDetail.css";
-import ItemCounts from "../ItemCounts/ItemCounts";
 
 export const ItemDetail = ({ data }) => {
   return (
@@ -12,8 +11,9 @@ export const ItemDetail = ({ data }) => {
         <div className="content">
           <h1 className="title__image">{data.title}</h1>
           <h2 className="description__image"> {data.description}</h2>
-          <h2 className="precio__image"> {data.precio}</h2>
-          <ItemCounts />
+          <h2 className="precio__image">${data.precio}</h2>
+          <ItemCounts stock={data.stock}/>
+          <h2 className="stock__image"> Stock disponible: {data.stock}</h2>
 
         </div>
       </div>

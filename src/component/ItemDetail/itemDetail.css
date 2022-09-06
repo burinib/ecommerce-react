@@ -59,3 +59,15 @@
   margin-top: 10px;
   text-align: left;
 }
+
+.stock__image {
+  font-family: "Hind Siliguri", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+}
+
+.container__spinner {
+  display: flex;
+  justify-content: center;
+}
