@@ -26,6 +26,9 @@
 .detail__image {
   display: flex;
   padding-right: 80px;
+  object-fit: contain;
+  width: 464px;
+  
 }
 
 .title__image {
@@ -70,4 +73,5 @@
 .container__spinner {
   display: flex;
   justify-content: center;
+  padding-top: 5rem;
 }

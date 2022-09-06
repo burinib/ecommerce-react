@@ -25,3 +25,7 @@
     font-weight: bold;
     color: white;
 }
+
+.container__category {
+    display: flex;
+}
