@@ -16,22 +16,15 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 10px;
+    color: white;
   }
 
-  .item__button {
-  background-color: rgba(16, 7, 43, 0.507);
-  color: white;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 15px;
-  border-width: 5px;
-  padding: 8px;
-  cursor: pointer;
-}
-.item__button:hover {
-  background-color: gray;
-}
-.item__button:active {
-  background-color: black;
-  border-color: white;
-}
+  .image__item {
+    width: 200px;
+    height: 264px;
+    
+  } 
+  
+  .image__item p {
+    color: white;
+  }
