@@ -2,7 +2,7 @@ import "./itemCounts.css";
 
 import React, { useState } from "react";
 
-export const ItemCounts = ({ stock = 5 }) => {
+export const ItemCounts = ({ stock = 5, onAdd = () => {} }) => {
   const [counter, setCounter] = useState(1);
   const increment = () => {
     if (counter < stock) {
@@ -21,7 +21,7 @@ export const ItemCounts = ({ stock = 5 }) => {
       <span>{counter}</span>
       <button onClick={() => increment()}>+</button>
       <div>
-        <button>Agregar al carrito</button>
+        <button onClick={() => onAdd(true)}>Agregar al carrito</button>
       </div>
     </div>
   );
