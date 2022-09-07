@@ -1,0 +1,8 @@
+.checkOut {
+  color: rgb(235, 17, 17);
+  box-sizing: content-box;
+  width: fit-content;
+  border: solid #0c0c0f 10px;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
