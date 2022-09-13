@@ -9,17 +9,17 @@ export default function NavBar() {
     <header className="header__main">
       <nav className="header__nav">
         <Link to="/">
-        <div className="header__title">Bahia informal clothing</div>
+          <div className="header__title">Bahia informal clothing</div>
         </Link>
         <ul className="header__options">
           <div className="container__category">
-            <Link to='/'>
+            <Link to="/category/trajes">
               <li>Trajes</li>
             </Link>
-            <Link to='/'>
+            <Link to="/category/camisas">
               <li>Camisas</li>
             </Link>
-            <Link to='/'>
+            <Link to="/category/remeras">
               <li>Remeras</li>
             </Link>
           </div>
