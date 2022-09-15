@@ -26,5 +26,27 @@
   } 
   
   .image__item p {
+    color: rgba(42, 2, 2, 0.485);
+  }
+
+  .product__title {
+    width: 60%;
+    text-align: center;
+  }
+  
+  .ver__mas {
+    background-color: #1e2122;
+    width: 60%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
     color: white;
+  }
+
+  .ver__mas:hover {
+    color: white;
+    background-color: black;
   }

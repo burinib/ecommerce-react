@@ -1,7 +1,7 @@
 
 export const data = [
     {
-      "title": "TRAJE CEREMONIAL ENTALLADO AZUL",
+      "title": "Traje entallado azul",
       "precio": 156000,
       "img": "https://cdn.pixabay.com/photo/2017/11/02/14/24/model-2911320_960_720.jpg",
       "id": 0,
@@ -10,7 +10,7 @@ export const data = [
       "category": "trajes"
     },
     {
-      "title": "TRAJE CEREMONIAL ENTALLADO GRIS",
+      "title": "Traje entallado gris",
       "precio": 133590,
       "img": "https://images.unsplash.com/photo-1619102814948-e164e584cf0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80s",
       "id": "1",
@@ -20,7 +20,7 @@ export const data = [
 
     },
     {
-      "title": "Camisa cuadros blanco y Negro",
+      "title": "Camisa cuadros",
       "precio": 13490,
       "img": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=692&q=80",
       "id": "2",
@@ -50,7 +50,7 @@ export const data = [
 
     },
     {
-      "title": "TRAJE CEREMONIAL ENTALLADO",
+      "title": "Traje entallado negro",
       "precio": 100490,
       "img": "  https://images.unsplash.com/photo-1594759845217-e9c99af2b6a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=402&q=80",
       "id": "5",
@@ -60,7 +60,7 @@ export const data = [
 
     },
     {
-      "title": "CAMISA AZUL/LUNARES",
+      "title": "Camisa lunares",
       "precio": 15490,
       "img": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "id": "6",
@@ -70,7 +70,7 @@ export const data = [
 
     },
     {
-      "title": "REMERA LISA BLANCA",
+      "title": "Remera lisa blanca",
       "precio": 12490,
       "img": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "id": "7",

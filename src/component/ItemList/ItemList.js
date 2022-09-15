@@ -22,8 +22,7 @@ export default function ItemList() {
   }, [id]);
 
   return productList?.map((product, index) => (
-    <Link to={`/detail/${product.id}`} key={index}>
-      <Item key={product.id} product={product} />{" "}
-    </Link>
+      <Item key={product.id} product={product} />
+    
   ));
 }
