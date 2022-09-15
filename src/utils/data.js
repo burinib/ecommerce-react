@@ -49,4 +49,34 @@ export const data = [
       "category": "remeras"
 
     },
+    {
+      "title": "TRAJE CEREMONIAL ENTALLADO",
+      "precio": 100490,
+      "img": "  https://images.unsplash.com/photo-1594759845217-e9c99af2b6a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=402&q=80",
+      "id": "5",
+      "description": "Ambo ceremonial liso de calce entallado. Saco solapa satinada con cuatro botones en manga y dos botones delanteros. Contiene forrería en combinación con vivo a contracolor y tres bolsillos internos y dos aberturas en espalda. Pantalón sin pinzas. dos bolsillos delanteros y dos bolsillos abotonados en la parte posterior.",
+      "stock": 9,
+      "category": "trajes"
+
+    },
+    {
+      "title": "CAMISA AZUL/LUNARES",
+      "precio": 15490,
+      "img": "https://images.unsplash.com/photo-1602810320073-1230c46d89d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "id": "6",
+      "description": "Ambo ceremonial liso de calce entallado. Saco solapa satinada con cuatro botones en manga y dos botones delanteros. Contiene forrería en combinación con vivo a contracolor y tres bolsillos internos y dos aberturas en espalda. Pantalón sin pinzas. dos bolsillos delanteros y dos bolsillos abotonados en la parte posterior.",
+      "stock": 9,
+      "category": "camisas"
+
+    },
+    {
+      "title": "REMERA LISA BLANCA",
+      "precio": 12490,
+      "img": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "id": "7",
+      "description": "Ambo ceremonial liso de calce entallado. Saco solapa satinada con cuatro botones en manga y dos botones delanteros. Contiene forrería en combinación con vivo a contracolor y tres bolsillos internos y dos aberturas en espalda. Pantalón sin pinzas. dos bolsillos delanteros y dos bolsillos abotonados en la parte posterior.",
+      "stock": 9,
+      "category": "remeras"
+
+    },
   ]
