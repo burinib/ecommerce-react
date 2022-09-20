@@ -4,10 +4,12 @@ import NavBar from "./component/NavBar";
 import ItemDetailContainer from "./component/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./component/Cart/Cart";
+import CartContextProvider from "./component/CartContext/CartContext";
 
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -18,6 +20,8 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
+    </CartContextProvider>
+
   );
 }
 

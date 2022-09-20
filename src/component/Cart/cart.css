@@ -1,2 +1,14 @@
-.cart {
+.cart__product {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+.cart__product div {
+    margin-right: 1rem;
+}
+
+.cart__product img {
+    width: 50px;
+    object-fit: cover;
 }
