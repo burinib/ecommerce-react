@@ -12,7 +12,7 @@ export const ItemDetailContainer = () => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(data);
-      }, 2000);
+      }, 500);
     });
 
     getData.then((res) => setInfo(res));

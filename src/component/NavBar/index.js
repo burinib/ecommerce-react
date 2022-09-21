@@ -27,9 +27,12 @@ export default function NavBar() {
           <li>Catalogo</li>
           <li>Envios</li>
           <li>Contacto</li>
+          <Link to="./Cart">
           <li>
             <CartWidget />
           </li>
+          </Link>
+
         </ul>
       </nav>
     </header>

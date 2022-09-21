@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     background-color: grey;
+    margin: 10px;
 }
 
 .cart__product div {
@@ -9,6 +10,34 @@
 }
 
 .cart__product img {
-    width: 50px;
+    width: 100px;
     object-fit: cover;
 }
+.irCompras {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.irCompras:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .eliminar__prod {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .eliminar__prod:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+ 

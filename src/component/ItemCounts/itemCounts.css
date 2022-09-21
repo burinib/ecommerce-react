@@ -15,3 +15,9 @@
     background-color: white;
     border: 1px solid gray;
 }
+
+.counter button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
