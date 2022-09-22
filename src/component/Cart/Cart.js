@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React, {  } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../CartContext/CartContext";
+import { useCartContext } from "../CartWidget/CartWidget";
 
 import "./cart.css";
 
 export default function Cart() {
-  const carrito = useContext(CartContext);
+  const carrito = useCartContext();
+  const { removeProduct } = carrito;
 
   return (
     <div>
-      <h2 className="cart__container">
-        
-      </h2>
       {carrito.cartList.length ? (
         carrito?.cartList.map((product) => (
           <div key={product.id} className="cart__product">
@@ -20,26 +18,26 @@ export default function Cart() {
             <div>${product?.precio}</div>
             <div>cantidad: {product?.cant}</div>
             <div>total: ${product?.cant * product?.precio}</div>
-            <button className="eliminar__prod">Eliminar producto</button>      
-            <div>
-            <Link to="/">
-        <button className="irCompras">Ir a compras</button>
-        </Link>
-
-            </div>    
+            <button
+              className="eliminar__prod"
+              onClick={() => {
+                removeProduct(product.id);
+              }}
+            >
+              Eliminar producto
+            </button>
           </div>
         ))
-        
       ) : (
-        <div> 
-        <div className="carritoNone">No hay productos en el carrito</div>
-        <Link to="/">
-        <button className="irCompras">Ir a compras</button>
-        </Link>
+        <div>
+          <div className="carritoNone">No hay productos en el carrito</div>
         </div>
       )}
+      <div>
+        <Link to="/">
+          <button className="irCompras">Ir a compras</button>
+        </Link>
+      </div>
     </div>
-    
   );
-  
 }
