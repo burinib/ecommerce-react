@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Bars } from "react-loader-spinner";
+import { firestoreFetch } from "../../utils/firebaseConfig";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import { data } from "../../utils/data";
 
 
 
@@ -9,13 +9,8 @@ export const ItemDetailContainer = () => {
   const [info, setInfo] = useState(false);
 
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(data);
-      }, 500);
-    });
-
-    getData.then((res) => setInfo(res));
+    firestoreFetch()
+    .then((res) => setInfo(res))
   }, []);
 
   return info ? (
