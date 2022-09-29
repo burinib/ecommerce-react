@@ -8,13 +8,25 @@ import "./itemDetail.css";
 
 export const ItemDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
-  const { addItem } = useContext(CartContext);
+  const { addItem, setPrecioTotal, cartList, showProducts } = useContext(CartContext);
 
   const { id } = useParams();
   const info = data[id];
 
+  const calcularPrecioTotal = () => {
+    setPrecioTotal(
+      cartList.reduce(
+        (acumulador, productoActual) =>
+          acumulador + productoActual.cant * productoActual.precio,
+        0
+      )
+    );
+  };
+
   const onAdd = (counter) => {
     addItem(info, counter);
+    calcularPrecioTotal();
+    showProducts();
     setGoToCart(true);
   };
 

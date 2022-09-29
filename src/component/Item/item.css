@@ -52,19 +52,3 @@
   }
 
 
-  .generar__orden {
-    background-color: #1e2122;
-    width: 60%;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 20px;
-    color: white;
-  }
-
-  .generar__orden:hover {
-    color: white;
-    background-color: black;
-  }

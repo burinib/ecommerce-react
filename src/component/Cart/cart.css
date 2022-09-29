@@ -3,25 +3,32 @@
     align-items: center;
     background-color: grey;
     margin: 10px;
+    min-height: 100px;
+    
 }
 
 .cart__product div {
     margin-right: 1rem;
+    
 }
 
 .cart__product img {
     width: 100px;
     object-fit: cover;
 }
-.irCompras {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ir__Compras {
+  background-color: #1a9ac442;
+  min-width: none;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: white;
 }
 
-.irCompras:hover {
+.ir__Compras:hover {
     color: white;
     background-color: black;
     cursor: pointer;
@@ -40,4 +47,75 @@
     background-color: black;
     cursor: pointer;
   }
+
+  .vaciar__carrito {
+    background-color: #1e2122;
+    min-width: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .vaciar__carrito:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .generar__orden {
+    background-color: #1e2122;
+    min-width: 14%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .generar__orden:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+  }
  
+  .cart__onclick {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    margin-top: auto;    
+  }
+
+  .contenedor__cartList {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .carritoNone {
+    display: flex;
+    justify-content: center;
+    border: solid 5px;
+    width: fit-content;
+    margin: 0 auto 0;
+    margin-top: 100px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+
+  }
+
+  .compra__total {
+    display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  }
