@@ -1,12 +1,40 @@
-import React, {  } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../CartWidget/CartWidget";
+import { addDoc, getFirestore, collection } from "firebase/firestore";
 
 import "./cart.css";
 
 export default function Cart() {
   const carrito = useCartContext();
-  const { removeProduct } = carrito;
+  const { removeProduct, cartList, setCartList } = carrito;
+
+  const order = {
+    buyer: {
+      name: "Leo Messi",
+      email: "braianb55@hotmail.com",
+      phone: "212122",
+      addres: "dsdss",
+    },
+    items: cartList.map((product) => ({
+      id: product.id,
+      title: product.title,
+      precio: product.precio,
+      cant: product.cant,
+    })),
+    total: 1000,
+    /*  total: carrito.reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      0
+    ), */
+  };
+
+  const handleClick = () => {
+    const db = getFirestore();
+    const ordersCollection = collection(db, "orders");
+    addDoc(ordersCollection, order).then(({ id }) => console.log(id));
+    setCartList([])
+  };
 
   return (
     <div>
@@ -34,6 +62,9 @@ export default function Cart() {
         </div>
       )}
       <div>
+            <button className="generar__orden" onClick={handleClick}>
+              Generar orden
+            </button>
         <Link to="/">
           <button className="irCompras">Ir a compras</button>
         </Link>

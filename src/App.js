@@ -6,22 +6,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./component/Cart/Cart";
 import CartContextProvider from "./component/CartContext/CartContext";
 
-
 function App() {
   return (
     <CartContextProvider>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/detail/:id" element={<ItemDetailContainer />} />
-        <Route path="/category/:id" element={<ItemListContainer />} />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+          <Route path="/category/:id" element={<ItemListContainer />} />
 
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
     </CartContextProvider>
-
   );
 }
 
