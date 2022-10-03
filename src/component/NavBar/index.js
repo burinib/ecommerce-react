@@ -22,9 +22,11 @@ export default function NavBar() {
             <Link to="/category/remeras">
               <li>Remeras</li>
             </Link>
+            <Link to="/category/abrigos">
+              <li>Abrigos</li>
+            </Link>
+            
           </div>
-          <li>Nosotros</li>
-          <li>Catalogo</li>
           <li>Envios</li>
           <li>Contacto</li>
           <Link to="./Cart">
