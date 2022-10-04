@@ -8,10 +8,11 @@ import "./itemDetail.css";
 
 export const ItemDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
-  const { addItem, setPrecioTotal, cartList, showProducts } = useContext(CartContext);
+  const { addItem, setPrecioTotal, cartList, showProducts } =
+    useContext(CartContext);
 
   const { id } = useParams();
-  const info = data[id];
+  const info = data.find((product) => product.id === id);
 
   const calcularPrecioTotal = () => {
     setPrecioTotal(
@@ -41,7 +42,7 @@ export const ItemDetail = ({ data }) => {
           {goToCart ? (
             <CheckOut />
           ) : (
-            <ItemCounts stock={info?.stock} onAdd={onAdd} />
+            <ItemCounts stock={info?.stock} onAdd={onAdd} id={id} />
           )}
           <h2 className="stock__image"> Stock disponible: {info?.stock}</h2>
         </div>
