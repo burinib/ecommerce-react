@@ -1,5 +1,6 @@
 .footer__Container {
     background-color: rgb(16, 15, 15);
+    min-height: 10vh;
 }
 
 .list__redes{

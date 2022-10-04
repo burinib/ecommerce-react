@@ -1,5 +1,10 @@
 .header__main {
     background-color: rgb(16, 15, 15);
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header__title {
@@ -12,6 +17,8 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .header__options {
@@ -29,6 +36,5 @@
 .container__category {
     display: flex;
     align-items: center;
-    ;
-    margin-right: 350px;
+    gap: 1rem;
 }

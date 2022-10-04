@@ -17,12 +17,14 @@
     align-items: center;
     padding: 10px;
     color: white;
+    height: min-content;
+    margin: 10px 0;
   }
 
   .image__item {
     width: 200px;
     height: 264px;
-    
+    object-fit: cover;
   } 
   
   .image__item p {

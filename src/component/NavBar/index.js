@@ -25,16 +25,16 @@ export default function NavBar() {
             <Link to="/category/abrigos">
               <li>Abrigos</li>
             </Link>
-            
           </div>
+        </ul>
+        <ul className="header__options">
           <li>Envios</li>
           <li>Contacto</li>
           <Link to="./Cart">
-          <li>
-            <CartWidget />
-          </li>
+            <li>
+              <CartWidget />
+            </li>
           </Link>
-
         </ul>
       </nav>
     </header>
