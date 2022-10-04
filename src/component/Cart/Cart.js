@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../CartWidget/CartWidget";
 import { addDoc, getFirestore, collection } from "firebase/firestore";
+import { Bars } from "react-loader-spinner";
 
 import "./cart.css";
 
 export default function Cart() {
   const carrito = useCartContext();
-  const { removeProduct, cartList, setCartList, precioTotal, showProducts } = carrito;
+  const [loading, setLoading] = useState(false);
+  const { removeProduct, cartList, setCartList, precioTotal, showProducts } =
+    carrito;
 
   const order = {
     buyer: {
@@ -34,6 +37,8 @@ export default function Cart() {
     const ordersCollection = collection(db, "orders");
     addDoc(ordersCollection, order).then(({ id }) => console.log(id));
     setCartList([]);
+    setLoading(true);
+    setTimeout(() => setLoading(false), 2000);
   };
 
   return (
@@ -60,29 +65,45 @@ export default function Cart() {
           <div className="compra__total">Total: ${precioTotal}</div>
         </div>
       ) : (
-        <div>
-          <div className="carritoNone">
-            ¡¡¡No hay productos en el carrito!!!
-          </div>
+        <div className="container__spinner">
+          {loading ? (
+            <Bars
+              height="80"
+              width="80"
+              color="#4fa94d"
+              ariaLabel="bars-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+            />
+          ) : (
+            <div className="carritoNone">
+              ¡¡¡No hay productos en el carrito!!!
+            </div>
+          )}
         </div>
       )}
 
       <div className="cart__onclick">
-        <button className="generar__orden" onClick={handleClick}>
-          Generar orden
-        </button>
+        {carrito.cartList.length ? (
+          <button className="generar__orden" onClick={handleClick}>
+            Generar orden
+          </button>
+        ) : null}
         <Link to="/">
           <button className="ir__Compras">Ir a compras</button>
         </Link>
-        <button
-          className="vaciar__carrito"
-          onClick={() => {
-            setCartList([]);
-            showProducts();
-          }}
-        >
-          Vaciar carrito
-        </button>
+        {carrito.cartList.length ? (
+          <button
+            className="vaciar__carrito"
+            onClick={() => {
+              setCartList([]);
+              showProducts();
+            }}
+          >
+            Vaciar carrito
+          </button>
+        ) : null}
       </div>
     </div>
   );
