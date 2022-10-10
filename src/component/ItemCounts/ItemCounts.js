@@ -1,8 +1,10 @@
-import "./itemCounts.css";
 
 import React, { useState } from "react";
+import { updateDocument } from "../../functions/updateDocument";
 
-export const ItemCounts = ({ stock = 5, onAdd = () => {} }) => {
+import "./itemCounts.css";
+
+export const ItemCounts = ({ stock = 5, onAdd = () => {} }, id) => {
   const [counter, setCounter] = useState(1);
   const increment = () => {
     if (counter < stock) {
@@ -15,13 +17,18 @@ export const ItemCounts = ({ stock = 5, onAdd = () => {} }) => {
     }
   };
 
+  const handleAdd = (id) => {
+    onAdd(counter);
+    updateDocument(id, counter);
+  }
+
   return (
     <div className="counter">
       <button onClick={() => decrement()}>-</button>
       <span>{counter}</span>
       <button onClick={() => increment()}>+</button>
       <div>
-        <button onClick={() => onAdd(counter)}>Agregar al carrito</button>
+        <button onClick={handleAdd}>Agregar al carrito</button>
       </div>
     </div>
   );

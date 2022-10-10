@@ -1,0 +1,54 @@
+.container__form {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Rancho", cursive;
+  min-height: 80vh;
+}
+.border_form {
+  border-style: dashed;
+  padding: 25px;
+  background-color: rgb(16, 15, 15);
+}
+
+.nombre__form {
+  margin: 10px;
+}
+
+.email__form {
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+.comentario__form {
+  margin: 10px;
+  display: flex;
+}
+.imput {
+  padding: 10px;
+  margin: 10px;
+}
+.tu__comentario {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.enviar__borrar {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.enviar__borrar input {
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.enviar__borrar input:hover {
+  color: black;
+  background-color: white;
+}

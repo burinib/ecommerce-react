@@ -11,7 +11,7 @@ export default function Item({ product }) {
       <p>${product.precio}</p>
       <p className="product__title">{product.title}</p>
       <Link className="ver__mas" to={`/detail/${product.id}`}>
-        <p>VER MAS </p>
+        <p>VER MAS</p>
       </Link>
     </div>
   );

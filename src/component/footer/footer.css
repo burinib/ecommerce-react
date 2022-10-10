@@ -5,8 +5,14 @@
 
 .list__redes{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px;
+    align-items: center;
     list-style: none;
 }
+
+.footer__icon{
+font-size: 25px;
+}
+
 

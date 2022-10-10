@@ -29,7 +29,9 @@ export default function NavBar() {
         </ul>
         <ul className="header__options">
           <li>Envios</li>
-          <li>Contacto</li>
+          <Link to="/form">
+            <li>Contacto</li>
+          </Link>
           <Link to="./Cart">
             <li>
               <CartWidget />
