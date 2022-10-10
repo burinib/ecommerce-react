@@ -114,8 +114,11 @@
   }
 
   .compra__total {
-    display: flex;
-  justify-content: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
-  }
+  border-style: double;
+  width: fit-content;
+  border-color: white;
+  color: white; 
+    
+}
