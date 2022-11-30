@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <header className="header__main">
       <nav className="header__nav">
-        <Link to="/">
+        <Link to="/react-ecommerce">
           <div className="header__title">Bahia informal clothing</div>
         </Link>
         <ul className="header__options">
