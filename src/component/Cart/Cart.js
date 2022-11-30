@@ -12,6 +12,11 @@ export default function Cart() {
   const { removeProduct, cartList, setCartList, precioTotal, showProducts } =
     carrito;
 
+
+
+
+
+
   const order = {
     buyer: {
       name: "Leo Messi",

@@ -47,6 +47,7 @@ export default function Form() {
             <label for="msg">{/* Comentario */}</label>
           </div>
         </fieldset>
+
         <div className="enviar__borrar">
           <input type="submit" id="button" value="Enviar ahora" />
           <input type="reset" value="Borrar todo" />
