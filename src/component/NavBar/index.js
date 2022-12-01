@@ -30,7 +30,7 @@ export default function NavBar() {
         <ul className="header__options">
           <li>Envios</li>
           <Link to="/form">
-            <li>Contacto</li>np
+            <li>Contacto</li>
           </Link>
           <Link to="./Cart">
             <li>
