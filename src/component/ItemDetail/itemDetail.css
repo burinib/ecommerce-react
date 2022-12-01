@@ -28,7 +28,6 @@
   padding-right: 80px;
   object-fit: contain;
   width: 464px;
-  
 }
 
 .title__image {
@@ -74,4 +73,41 @@
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .detail__image {
+    padding-top: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title__image {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .description__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .precio__image {
+    display: flex;
+    justify-content: center;
+  }
+  .counter {
+    margin-top: 35px;
+  }
 }
