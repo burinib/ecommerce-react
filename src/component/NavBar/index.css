@@ -39,10 +39,21 @@
     gap: 1rem;
 }
 
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 480px) {
     .header__main {
         display: flex;
-        background-color: red;
+        width: 100&;
     }
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .container__category {
+        display: grid;
+        width: fit-content;
+    }
+
 }
 
