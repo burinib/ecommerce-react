@@ -53,9 +53,9 @@ export default function Cart() {
           {carrito?.cartList.map((product) => (
             <div key={product.id} className="cart__product">
               <img src={product.img} alt={product.title} />
-              <div>{product?.title}</div>
-              <div>${product?.precio}</div>
-              <div>cantidad: {product?.cant}</div>
+              <div id="nombre__producto">{product?.title}</div>
+              <div id="precio__producto">${product?.precio}</div>
+              <div >cant: {product?.cant}</div>
               <div>total: ${product?.cant * product?.precio}</div>
               <button
                 className="eliminar__prod"

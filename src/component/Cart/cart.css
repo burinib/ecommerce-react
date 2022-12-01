@@ -122,3 +122,21 @@
   color: white; 
     
 }
+
+@media only screen and (max-width: 480px) {
+    #nombre__producto{
+      display: none;
+
+    }
+      #precio__producto {
+        display: none;
+      }
+      .compra__total {
+        margin: 0 auto;
+      }
+
+      .cart__onclick {
+        margin-bottom: 35px;
+      }
+  }
+
