@@ -9,7 +9,7 @@ export default function NavBar() {
     <header className="header__main">
       <nav className="header__nav">
         <Link to="/react-ecommerce">
-          <div className="header__title">Bahia informal clothing</div>
+          <div style={{marginLeft:150}} className="header__title">Bahia informal clothing</div>
         </Link>
         <ul className="header__options">
           <div className="container__category">
