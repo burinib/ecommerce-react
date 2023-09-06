@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { updateDocument } from "../../functions/updateDocument";
 
@@ -20,7 +19,7 @@ export const ItemCounts = ({ stock = 5, onAdd = () => {} }, id) => {
   const handleAdd = (id) => {
     onAdd(counter);
     updateDocument(id, counter);
-  }
+  };
 
   return (
     <div className="counter">
