@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-
 import "./form.css";
 
 export default function Form() {
-  const [nomnbre, setNombre] = useState("");
+  const [nombre, setNombre] = useState("");
+
+  const handleNombreChange = (event) => {
+    setNombre(event.target.value);
+  };
 
   return (
     <div className="container__form">
@@ -15,10 +18,12 @@ export default function Form() {
               name="nombre"
               type="text"
               id="nombre"
-              placeholder="ingrese su nombre"
+              placeholder="Ingrese su nombre"
+              value={nombre}
+              onChange={handleNombreChange}
               required
             />
-            <label for="nombre">{/* Nombre */}</label>
+            <label htmlFor="nombre">Nombre</label>
           </div>
 
           <div className="email__form">
@@ -30,7 +35,7 @@ export default function Form() {
               placeholder="tunombre@hotmail.com"
               required
             />
-            <label for="mail">{/* Email */}</label>
+            <label htmlFor="mail">Email</label>
           </div>
           <div>
             <h2> Dejanos tu comentario</h2>
@@ -44,7 +49,7 @@ export default function Form() {
               cols="25"
               rows="5"
             ></textarea>
-            <label for="msg">{/* Comentario */}</label>
+            <label htmlFor="msg">Comentario</label>
           </div>
         </fieldset>
 
